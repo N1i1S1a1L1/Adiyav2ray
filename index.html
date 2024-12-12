@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1a0000, #4d0000);
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        header {
+            text-align: center;
+            animation: fadeInScale 2s ease-out;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            color: #ff0000;
+            margin: 0;
+            text-shadow: 0px 4px 15px rgba(255, 0, 0, 0.8);
+        }
+
+        header p {
+            font-size: 1.3rem;
+            color: #cccccc;
+            margin: 10px 0 20px;
+        }
+
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            max-width: 90%;
+            animation: fadeInSlideUp 2s ease-out;
+        }
+
+        .button {
+            padding: 15px 40px;
+            background: #000000;
+            color: #ff0000;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            border: 2px solid #ff0000;
+            border-radius: 12px;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0px 4px 10px rgba(255, 0, 0, 0.5);
+        }
+
+        .button:hover {
+            background: #ff0000;
+            color: #000000;
+            transform: scale(1.1) translateY(-5px);
+            box-shadow: 0px 6px 15px rgba(255, 0, 0, 0.7);
+            border-color: #ff0000;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 20px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .owner {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #ff0000;
+            text-shadow: 0px 0px 10px rgba(255, 0, 0, 0.8), 0px 0px 20px rgba(255, 0, 0, 0.6);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInScale {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes fadeInSlideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Best V2Ray Servers</h1>
+        <p>Select a package category</p>
+    </header>
+
+    <div class="buttons">
+        <a href="dialog-sim.html" class="button">Dialog SIM</a>
+        <a href="dialog-router.html" class="button">Dialog Router</a>
+        <a href="hutch-sim.html" class="button">Hutch SIM</a>
+        <a href="slt-fiber-router.html" class="button">SLT Fiber Router</a>
+        <a href="mobitel-sim.html" class="button">Mobitel SIM</a>
+        <a href="airtel-sim.html" class="button">Airtel SIM</a>
+    </div>
+</body>
+</html>
